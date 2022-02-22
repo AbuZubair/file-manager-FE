@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'filemanager-app';
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  title = 'filemanager';
+  public hostUrl: string = 'http://localhost:3001/';
   public ajaxSettings: object = {
-    url: this.hostUrl + 'api/FileManager/FileOperations',
-    downloadUrl: this.hostUrl + 'api/FileManager/Download',
-    uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-    getImageUrl: this.hostUrl + 'api/FileManager/GetImage'
+    url: this.hostUrl,
+    downloadUrl: this.hostUrl + 'Download',
+    uploadUrl: this.hostUrl + 'Upload',
+    getImageUrl: this.hostUrl + 'GetImage'
   };
 }

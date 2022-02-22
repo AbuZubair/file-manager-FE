@@ -8,9 +8,6 @@ const compression = require('compression');
 
 // Get Environtment Variable
 
-// If want to use .env file, need install dotenv from npm. and use below code
-require('dotenv').config()
-
 // Get our API routes
 const app = express();
 

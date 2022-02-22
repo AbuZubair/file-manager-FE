@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'filemanager';
-  public hostUrl: string = 'http://http://103.81.249.69:3001/';
+  public hostUrl: string = 'http://103.81.249.69:3001/';
   public ajaxSettings: object = {
     url: this.hostUrl,
     downloadUrl: this.hostUrl + 'Download',
